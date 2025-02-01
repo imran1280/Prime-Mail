@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prime Mail</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Prime Mail</h1>
-    <p>Get your temporary email address!</p>
-    <button id="generate-email">Generate Email</button>
-    <div id="email-output" class="email-output">
-      <p>Your temporary email: <span id="email"></span></p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Facebook</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search Facebook">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Friends</a>
+            <a href="#">Messages</a>
+            <a href="#">Profile</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li>News Feed</li>
+                <li>Messages</li>
+                <li>Notifications</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+
+        <!-- Main Feed -->
+        <div class="main-content">
+            <div class="post-box">
+                <textarea placeholder="What's on your mind?"></textarea>
+                <button>Post</button>
+            </div>
+            <div class="post">
+                <h4>John Doe</h4>
+                <p>This is a Facebook post example.</p>
+            </div>
+        </div>
     </div>
-    <footer>
-      <p>Powered by Prime Mail</p>
-    </footer>
-  </div>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
-</html>
+  </html>
