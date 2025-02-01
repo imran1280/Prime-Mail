@@ -1,51 +1,84 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    background-color: #f0f2f5;
 }
 
+/* Navigation Bar */
+.navbar {
+    background-color: #1877f2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-box input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Sidebar */
 .container {
-  text-align: center;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin: 20px;
 }
 
-h1 {
-  color: #4CAF50;
+.sidebar {
+    width: 20%;
+    padding: 10px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.sidebar ul {
+    list-style: none;
 }
 
-button:hover {
-  background-color: #45a049;
+.sidebar ul li {
+    padding: 10px;
+    background: white;
+    margin: 5px 0;
+    cursor: pointer;
 }
 
-.email-output {
-  margin-top: 20px;
-  background-color: #e3f7e3;
-  padding: 10px;
-  border-radius: 5px;
+/* Main Content */
+.main-content {
+    width: 70%;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
 }
 
-footer {
-  margin-top: 30px;
-  color: #aaa;
+.post-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.post-box button {
+    margin-top: 10px;
+    background: #1877f2;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.post {
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
