@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Clone</title>
+    <title>ফিউচারিস্টিক ব্লগ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">Facebook</div>
-        <div class="search-box">
-            <input type="text" placeholder="Search Facebook">
+    <header>
+        <div class="logo">
+            <h1>ফিউচারিস্টিক ব্লগ</h1>
         </div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Friends</a>
-            <a href="#">Messages</a>
-            <a href="#">Profile</a>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
+        <nav>
             <ul>
-                <li>News Feed</li>
-                <li>Messages</li>
-                <li>Notifications</li>
-                <li>Settings</li>
+                <li><a href="#">হোম</a></li>
+                <li><a href="#">পোস্ট করুন</a></li>
+                <li><a href="#">সম্পর্কে</a></li>
             </ul>
-        </div>
+        </nav>
+    </header>
 
-        <!-- Main Feed -->
-        <div class="main-content">
-            <div class="post-box">
-                <textarea placeholder="What's on your mind?"></textarea>
-                <button>Post</button>
-            </div>
+    <main>
+        <section class="feed">
             <div class="post">
-                <h4>John Doe</h4>
-                <p>This is a Facebook post example.</p>
+                <div class="post-header">
+                    <img src="profile.jpg" alt="Profile" class="profile-img">
+                    <div class="post-user-info">
+                        <h3>ইউজার নাম</h3>
+                        <p>2 ঘন্টা আগে</p>
+                    </div>
+                </div>
+                <p>এটি একটি উদাহরণ পোস্ট যা ফিউচারিস্টিক ডিজাইনে তৈরি করা হয়েছে।</p>
+                <div class="post-media">
+                    <video controls>
+                        <source src="video.mp4" type="video/mp4">
+                        আপনার ব্রাউজার ভিডিও ফাইলটি সাপোর্ট করে না।
+                    </video>
+                    <img src="image.jpg" alt="Image Example">
+                </div>
             </div>
-        </div>
-    </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <img src="profile.jpg" alt="Profile" class="profile-img">
+                    <div class="post-user-info">
+                        <h3>ইউজার নাম</h3>
+                        <p>1 দিন আগে</p>
+                    </div>
+                </div>
+                <p>আরেকটি উদাহরণ পোস্ট!</p>
+                <div class="post-media">
+                    <img src="image2.jpg" alt="Image Example">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ফিউচারিস্টিক ব্লগ. সব অধিকার সংরক্ষিত।</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-  </html>
+    </html>
