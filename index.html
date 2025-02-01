@@ -3,52 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>প্রোফাইল পেজ</title>
+    <title>ফিউচারিস্টিক ব্লগ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
     <header>
         <div class="logo">
-            <h1>প্রোফাইল পেজ</h1>
+            <h1>ফিউচারিস্টিক ব্লগ</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="#">হোম</a></li>
-                <li><a href="#">বন্ধুরা</a></li>
-                <li><a href="#">নিউজফিড</a></li>
-                <li><a href="#">লগআউট</a></li>
+                <li><a href="#">পোস্ট করুন</a></li>
+                <li><a href="#">সম্পর্কে</a></li>
+                <li><a href="#login-form" onclick="showLoginForm()">লগইন</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Profile Section -->
-    <section class="profile-section">
-        <div class="profile-header">
-            <img class="cover-photo" src="cover-photo.jpg" alt="Cover Photo">
-            <div class="profile-info">
-                <img class="profile-photo" src="profile-photo.jpg" alt="Profile Photo">
-                <h2>রান</h2>
-                <p>@coolboyran99</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Post Section -->
-    <section class="post-section">
-        <h3>আপনার পোস্ট শেয়ার করুন</h3>
-        <form id="post-form">
-            <textarea id="post-content" placeholder="আপনার চিন্তা লিখুন..." required></textarea>
-            <button type="submit">পোস্ট করুন</button>
+    <!-- Login Form -->
+    <div class="login-container" id="login-form">
+        <h2>লগইন করুন</h2>
+        <form id="login-form-element">
+            <input type="text" id="username" placeholder="ইউজারনেম" required>
+            <input type="password" id="password" placeholder="পাসওয়ার্ড" required>
+            <button type="submit">লগইন</button>
         </form>
-        <div id="posts"></div>
+    </div>
+
+    <!-- Video Upload Form -->
+    <section class="upload-section">
+        <h2>ভিডিও আপলোড করুন</h2>
+        <form id="video-upload-form">
+            <input type="file" id="video-file" accept="video/*" required>
+            <button type="submit">আপলোড করুন</button>
+        </form>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 প্রোফাইল পেজ. সব অধিকার সংরক্ষিত।</p>
+        <p>&copy; 2025 ফিউচারিস্টিক ব্লগ. সব অধিকার সংরক্ষিত।</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html>
+    </html>
