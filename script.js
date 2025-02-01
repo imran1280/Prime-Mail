@@ -1,15 +1,2 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const postButton = document.querySelector(".post-box button");
-    const postInput = document.querySelector(".post-box textarea");
-    const mainContent = document.querySelector(".main-content");
-
-    postButton.addEventListener("click", function () {
-        if (postInput.value.trim() !== "") {
-            const newPost = document.createElement("div");
-            newPost.classList.add("post");
-            newPost.innerHTML = `<h4>You</h4><p>${postInput.value}</p>`;
-            mainContent.appendChild(newPost);
-            postInput.value = "";
-        }
-    });
-});
+// এখানে JavaScript দিয়ে আরও ইন্টারঅ্যাকটিভ ফিচার যোগ করা যেতে পারে,
+// যেমন পোস্টের ওপর ক্লিক করলে আরও কিছু তথ্য দেখানো বা ভিডিও/ছবি গ্যালারি চালু করা।
