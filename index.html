@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
     <header>
         <div class="logo">
             <h1>ফিউচারিস্টিক ব্লগ</h1>
@@ -16,45 +17,29 @@
                 <li><a href="#">হোম</a></li>
                 <li><a href="#">পোস্ট করুন</a></li>
                 <li><a href="#">সম্পর্কে</a></li>
+                <li><a href="#login-form" onclick="showLoginForm()">লগইন</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="feed">
-            <div class="post">
-                <div class="post-header">
-                    <img src="profile.jpg" alt="Profile" class="profile-img">
-                    <div class="post-user-info">
-                        <h3>ইউজার নাম</h3>
-                        <p>2 ঘন্টা আগে</p>
-                    </div>
-                </div>
-                <p>এটি একটি উদাহরণ পোস্ট যা ফিউচারিস্টিক ডিজাইনে তৈরি করা হয়েছে।</p>
-                <div class="post-media">
-                    <video controls>
-                        <source src="video.mp4" type="video/mp4">
-                        আপনার ব্রাউজার ভিডিও ফাইলটি সাপোর্ট করে না।
-                    </video>
-                    <img src="image.jpg" alt="Image Example">
-                </div>
-            </div>
+    <!-- Login Form -->
+    <div class="login-container" id="login-form">
+        <h2>লগইন করুন</h2>
+        <form id="login-form-element">
+            <input type="text" id="username" placeholder="ইউজারনেম" required>
+            <input type="password" id="password" placeholder="পাসওয়ার্ড" required>
+            <button type="submit">লগইন</button>
+        </form>
+    </div>
 
-            <div class="post">
-                <div class="post-header">
-                    <img src="profile.jpg" alt="Profile" class="profile-img">
-                    <div class="post-user-info">
-                        <h3>ইউজার নাম</h3>
-                        <p>1 দিন আগে</p>
-                    </div>
-                </div>
-                <p>আরেকটি উদাহরণ পোস্ট!</p>
-                <div class="post-media">
-                    <img src="image2.jpg" alt="Image Example">
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Video Upload Form -->
+    <section class="upload-section">
+        <h2>ভিডিও আপলোড করুন</h2>
+        <form id="video-upload-form">
+            <input type="file" id="video-file" accept="video/*" required>
+            <button type="submit">আপলোড করুন</button>
+        </form>
+    </section>
 
     <footer>
         <p>&copy; 2025 ফিউচারিস্টিক ব্লগ. সব অধিকার সংরক্ষিত।</p>
@@ -62,4 +47,4 @@
 
     <script src="script.js"></script>
 </body>
-    </html>
+        </html>
