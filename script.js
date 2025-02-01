@@ -1,7 +1,15 @@
-document.getElementById('generate-email').addEventListener('click', function() {
-  const randomString = Math.random().toString(36).substring(2, 15);
-  const email = `${randomString}@tempmail.com`;
+document.addEventListener("DOMContentLoaded", function () {
+    const postButton = document.querySelector(".post-box button");
+    const postInput = document.querySelector(".post-box textarea");
+    const mainContent = document.querySelector(".main-content");
 
-  document.getElementById('email').textContent = email;
-  document.getElementById('email-output').style.display = 'block';
+    postButton.addEventListener("click", function () {
+        if (postInput.value.trim() !== "") {
+            const newPost = document.createElement("div");
+            newPost.classList.add("post");
+            newPost.innerHTML = `<h4>You</h4><p>${postInput.value}</p>`;
+            mainContent.appendChild(newPost);
+            postInput.value = "";
+        }
+    });
 });
